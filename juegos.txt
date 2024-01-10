@@ -1,0 +1,24 @@
+6   - 2 trios
+7   - 1 trio, 1 escala
+8   - 2 escalas
+9   - 3 trios
+10  - 2 trios, 1 escala
+11  - 1 trio, 2 escalas
+12.1 - 4 trios
+12.2 - 3 escalas
+12.3 - Escala Sucia
+12.4 - Escala Real
+
+
+
+TODO: 
+        Despues de ingresar puntajes JS deberia comprar la suma de cada
+        persona y detectar el ganador temporal, O los ganadores en caso 
+        de haber empate en ese momento, Y agregar una corona arriba del 
+        titulo.
+
+        
+        Poder elegir la cantidad de jugadores.
+
+
+        Style it with CSS
