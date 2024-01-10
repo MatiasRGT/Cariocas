@@ -16,6 +16,7 @@
 
     <section class="content_section">
 
+        <!-- NOMBRE JUEGOS-->
         <div class="desc_div">
             <h1>Juego</h1>
             <p>2.T</p>
@@ -26,13 +27,16 @@
             <p>1.T - 2.E</p>
             <p>4.T</p>
             <p>3.E</p>
-            <p>'Sucia'</p>
+            <p>Full</p>
             <p>Real</p>
+            <p>TOTAL</p>
         </div>
 
+        <!-- PERSONA 1-->
         <div class="persona1_div">
             <h1>Persona 1</h1>
-            <input type="text" placeholder="puntos">
+            <input id="userInput_p1_1" type="text" placeholder="pts">
+            <input id="userInput_p1_2"type="text">
             <input type="text">
             <input type="text">
             <input type="text">
@@ -41,12 +45,16 @@
             <input type="text">
             <input type="text">
             <input type="text">
-            <input type="text">
+
+            <!-- SUMA de puntaje-->
+            <h2 id="ptsTotal_p1">pts: </h2>
+
         </div>
 
+        <!-- PERSONA 2 -->
         <div class="persona2_div">
             <h1>Persona 2</h1>
-            <input type="text" placeholder="puntos">
+            <input type="text" placeholder="pts">
             <input type="text">
             <input type="text">
             <input type="text">
@@ -56,11 +64,18 @@
             <input type="text">
             <input type="text">
             <input type="text">
+
+            <!-- SUMA de puntaje-->
+            <div class="read-only-txt" id="sumBox2">
+                <h1>pts: 0</h1>
+            </div>
+
         </div>
 
+        <!-- PERSONA 3-->
         <div class="persona3_div">
             <h1>Persona 3</h1>
-            <input type="text" placeholder="puntos">
+            <input type="text" placeholder="pts">
             <input type="text">
             <input type="text">
             <input type="text">
@@ -70,11 +85,16 @@
             <input type="text">
             <input type="text">
             <input type="text">
+
+            <!-- SUMA de puntaje-->
+            <div class="read-only-txt" id="sumBox3">
+                <h1>pts: 0</h1>
+            </div>
+
         </div>
 
     </section>
     
-
 
     <script src="script.js"></script>
 </body>
