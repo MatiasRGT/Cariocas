@@ -1,0 +1,45 @@
+body {
+    background-color: #303136;
+    color: white;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around; /* Adjust spacing between titles */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.main-heading {
+    display: flex;
+    font-size: 3em; /* Adjust the font size as needed */
+    /* justify-content: center; /* Center horizontally */
+}
+
+.content_section {
+    display: flex; /* Use flexbox for the side-by-side layout */
+    justify-content: space-around; /* Adjust spacing between personas */
+    margin-top: 10px; /* Add margin between header and personas for spacing */
+    padding: 0 20px; /* Add padding to the left and right */
+}
+
+.desc_div,
+.persona1_div,
+.persona2_div,
+.persona3_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.persona1_div input,
+.persona2_div input,
+.persona3_div input {
+    margin-top: 13px; /* Add more vertical margin as needed */
+    height: 30px; /* Set the height to your desired value */
+    width: 30%; /* Set the width to your desired value */
+    font-size: 27px; /* Set the font size to your desired value */
+    text-align: center; /* Center the text horizontally within the input box */
+}
