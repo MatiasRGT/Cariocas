@@ -104,6 +104,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Ultima implementacion que suma todos los puntajes de cada contenido de cada DIV
 
+/*
 document.addEventListener("DOMContentLoaded", function () {
     // Get all the persona divs
     const personaDivs = document.querySelectorAll('.content_section > div[class^="persona"]');
@@ -137,3 +138,40 @@ document.addEventListener("DOMContentLoaded", function () {
         ptsTotalElement.textContent = `pts: ${sum}`;
     }
 });
+*/
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Get all the persona divs
+    const personaDivs = document.querySelectorAll('.content_section > div[class^="persona"]');
+
+    // Add event listeners to each input inside persona divs
+    personaDivs.forEach((personaDiv) => {
+        const inputs = personaDiv.querySelectorAll('input[type="text"]');
+        inputs.forEach((input) => {
+            input.addEventListener('input', updateSum);
+        });
+    });
+
+    // Function to update the sum
+    function updateSum() {
+        // Get the parent persona div
+        const personaDiv = this.closest('.content_section > div[class^="persona"]');
+
+        // Get all inputs inside the current persona div
+        const inputs = personaDiv.querySelectorAll('input[type="text"]');
+
+        // Calculate the sum
+        const sum = Array.from(inputs).reduce((total, input) => {
+            const inputValue = parseInt(input.value) || 0;
+            return total + inputValue;
+        }, 0);
+
+        // Get the corresponding ptsTotal element
+        const ptsTotalElement = personaDiv.querySelector('h2[id^="ptsTotal_p"]');
+        
+        // Display the sum in the ptsTotal element
+        ptsTotalElement.textContent = `pts: ${sum}`;
+    }
+});
+

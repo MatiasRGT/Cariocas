@@ -26,7 +26,8 @@ header {
 .desc_div,
 .persona1_div,
 .persona2_div,
-.persona3_div {
+.persona3_div,
+.persona4_div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,7 +37,8 @@ header {
 
 .persona1_div input,
 .persona2_div input,
-.persona3_div input {
+.persona3_div input,
+.persona4_div input {
     margin-top: 13px; /* Add more vertical margin as needed */
     height: 30px; /* Set the height to your desired value */
     width: 30%; /* Set the width to your desired value */
